@@ -1,0 +1,274 @@
+<!doctype html>
+
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Ecommerce Website - Shoping</title>
+        <!--  Link To CSS-->
+        <link rel="stylesheet" href="style.css">
+        <!--  Box Icons   -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <section id="header">
+            <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+
+            <div>
+                <ul id="navbar">
+                    <li><a class="active" href="index.html">Главная</a></li>
+                    <li><a href="shop.html">Магазин</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li id="lg-bag"><a href="cart.html"><i class='bx bx-shopping-bag' id="cart-icon"></i></a></li>
+                    <a href="#" id="close"><i class='bx bx-x'></i></a>
+                </ul>
+            </div>
+
+            <div id="mobile">
+                <a href="cart.html"><i class='bx bx-shopping-bag' id="cart-icon"></i></a>
+                <i id="bar" class='bx bx-left-indent'></i>
+            </div>
+        </section>
+
+        <section id="hero">
+            <h2>Супер выгодно</h2>
+            <h1>Скидки на все товары</h1>
+            <p>Сэкономьте больше с купонами и скидками до 70%!</p>
+            <button>КУПИТЬ</button>
+        </section>
+
+        <section id="feature" class="section-p1">
+            <div class="fe-box">
+                <img src="img/features/f1.png" alt="">
+                <h6>Бесплатная доставка</h6>
+            </div>
+            <div class="fe-box">
+                <img src="img/features/f2.png" alt="">
+                <h6>Онлайн заказ</h6>
+            </div>
+            <div class="fe-box">
+                <img src="img/features/f3.png" alt="">
+                <h6>Экономия денег</h6>
+            </div>
+            <div class="fe-box">
+                <img src="img/features/f4.png" alt="">
+                <h6>Промо-акции</h6>
+            </div>
+            <div class="fe-box">
+                <img src="img/features/f5.png" alt="">
+                <h6>Продажа с улыбкой</h6>
+            </div>
+            <div class="fe-box">
+                <img src="img/features/f6.png" alt="">
+                <h6>Поддержка 24/7</h6>
+            </div>
+
+            <script>
+                const colors = ['#cdebbc', '#d1e8f2', '#cdd4f8', '#f6dbf6', '#fff2e5'];
+
+                const boxes = document.querySelectorAll('#feature .fe-box h6');
+                boxes.forEach((box, index) => {
+                    box.style.backgroundColor = colors[index];
+                });
+            </script>
+
+        </section>
+
+        <section id="product1" class="section-p1">
+            <h2>Рекомендуемые товары</h2>
+            <p>Летняя коллекция</p>
+            <div class="pro-container">
+                <div class="pro" onclick="window.location.href='sproduct.html';">
+                    <img src="img/products/product1/product1.jpg" alt="">
+                    <div class="des">
+                        <span>Nike</span>
+                        <h5>AIR JORDAN 4 RETRO</h5>
+                        <div class="star">
+                            <i class="fa-star"></i>
+                            <i class="fa-star"></i>
+                            <i class="fa-star"></i>
+                            <i class="fa-star"></i>
+                            <i class="fa-star"></i>
+                        </div>
+                        <h4>$80</h4>
+                    </div>
+                    <a href="#"><i class='bx bx-cart cart'></i></a>
+                </div>
+                <div class="pro">
+                    <img src="img/products/product2.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>OZWEEGO</h5>
+                        <div class="star">
+                            <i class="fa-star"></i>
+                            <i class="fa-star"></i>
+                            <i class="fa-star"></i>
+                            <i class="fa-star"></i>
+                            <i class="fa-star"></i>
+                        </div>
+                        <h4>$80</h4>
+                    </div>
+                    <a href="#"><i class='bx bx-cart cart'></i></a>
+                </div>
+                <div class="pro">
+                    <img src="img/products/product3.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>SALOMON XA FORCES GTX</h5>
+                        <div class="star">
+                            <i class="fa-star"></i>
+                            <i class="fa-star"></i>
+                            <i class="fa-star"></i>
+                            <i class="fa-star"></i>
+                            <i class="fa-star"></i>
+                        </div>
+                        <h4>$80</h4>
+                    </div>
+                    <a href="#"><i class='bx bx-cart cart'></i></a>
+                </div>
+                <div class="pro">
+                    <img src="img/products/product4.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>FORUM LOW</h5>
+                        <div class="star">
+                            <i class="fa-star"></i>
+                            <i class="fa-star"></i>
+                            <i class="fa-star"></i>
+                            <i class="fa-star"></i>
+                            <i class="fa-star"></i>
+                        </div>
+                        <h4>$80</h4>
+                    </div>
+                    <a href="#"><i class='bx bx-cart cart'></i></a>
+                </div>
+                <div class="pro">
+                    <img src="img/products/product5.jpg" alt="">
+                    <div class="des">
+                        <span>balance</span>
+                        <h5>NEW BALANCE 9060</h5>
+                        <div class="star">
+                            <i class="fa-star"></i>
+                            <i class="fa-star"></i>
+                            <i class="fa-star"></i>
+                            <i class="fa-star"></i>
+                            <i class="fa-star"></i>
+                        </div>
+                        <h4>$80</h4>
+                    </div>
+                    <a href="#"><i class='bx bx-cart cart'></i></a>
+                </div>
+                <div class="pro">
+                    <img src="img/products/product6.jpg" alt="">
+                    <div class="des">
+                        <span>nike</span>
+                        <h5>SB DUNK LOW</h5>
+                        <div class="star">
+                            <i class="fa-star"></i>
+                            <i class="fa-star"></i>
+                            <i class="fa-star"></i>
+                            <i class="fa-star"></i>
+                            <i class="fa-star"></i>
+                        </div>
+                        <h4>$80</h4>
+                    </div>
+                    <a href="#"><i class='bx bx-cart cart'></i></a>
+                </div>
+                <div class="pro">
+                    <img src="img/products/product7.jpg" alt="">
+                    <div class="des">
+                        <span>nike</span>
+                        <h5>AIR FORCE 1 LOW</h5>
+                        <div class="star">
+                            <i class="fa-star"></i>
+                            <i class="fa-star"></i>
+                            <i class="fa-star"></i>
+                            <i class="fa-star"></i>
+                            <i class="fa-star"></i>
+                        </div>
+                        <h4>$80</h4>
+                    </div>
+                    <a href="#"><i class='bx bx-cart cart'></i></a>
+                </div>
+                <div class="pro">
+                    <img src="img/products/product8.jpg" alt="">
+                    <div class="des">
+                        <span>nike</span>
+                        <h5>DEAD X SB DUNK LOW</h5>
+                        <div class="star">
+                            <i class="fa-star"></i>
+                            <i class="fa-star"></i>
+                            <i class="fa-star"></i>
+                            <i class="fa-star"></i>
+                            <i class="fa-star"></i>
+                        </div>
+                        <h4>$80</h4>
+                    </div>
+                    <a href="#"><i class='bx bx-cart cart'></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="newsletter" class="section-p1 section-m1">
+            <div class="newstext">
+                <h4>Подписаться на нашу рассылку новостей</h4>
+                <p>Получайте обновления по электронной почте о нашем последнем поступлении и  <span>специальных предложениях</span></p>
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Ваш email адресс">
+                <button class="normal">Подписаться</button>
+            </div>
+        </section>
+
+        <footer class="section-p1">
+            <div class="col">
+                <img class="logo" src="img/logo.png" alt="">
+                <h4>Контакты</h4>
+                <p> <strong>Адресс: </strong> Гороховский переулок, 4, корп. 1</p>
+                <p> <strong>Телефон: </strong> +7 (999) 99-99</p>
+                <p> <strong>Часы работы: </strong> 10:00 - 18:00, ПН-ПТ</p>
+                <div class="follow">
+                    <h4>Подпишитесь на нас</h4>
+                    <div class="icon">
+                        <i class='bx bxl-vk'></i>
+                        <i class='bx bxl-instagram' ></i>
+                        <i class='bx bxl-twitter'></i>
+                        <i class='bx bxl-telegram' ></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <h4>Мы</h4>
+                <a href="#">О нас</a>
+                <a href="#">Информация о доставке</a>
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Условия использования</a>
+                <a href="#">Свяжитесь с нами</a>
+            </div>
+
+            <div class="col">
+                <h4>Личный кабиет</h4>
+                <a href="#">Войти</a>
+                <a href="#">Просмотр корзины</a>
+                <a href="#">Список желаний</a>
+                <a href="#">Отследить мой заказ</a>
+                <a href="#">Помощь</a>
+            </div>
+
+            <div class="col install">
+                <h4>Установить Приложение</h4>
+                <p>App Store и Google Play</p>
+                <div class="row">
+                    <img src="img/pay/app.jpg" alt="">
+                    <img src="img/pay/play.jpg" alt="">
+                </div>
+                <p>Безопастная оплата </p>
+                <img src="img/pay/pay.png" alt="">
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
